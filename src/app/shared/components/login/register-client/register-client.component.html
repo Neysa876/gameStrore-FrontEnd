@@ -3,7 +3,7 @@
     <mat-card>
       <mat-card-title>Register user</mat-card-title>
       <mat-card-content>
-        <span *ngIf="formRegistro.submitted && formRegistro.controls['email'].errors"
+        <span *ngIf="formRegistro.submitted && formRegistro.controls['nickname'].errors"
           class="text-danger animated fadeIn fast">Nickname
           required</span>
         <mat-form-field class="input m-b-16">
@@ -18,7 +18,7 @@
           <input type="email" matInput placeholder="Email" [(ngModel)]="user.email" name="email" required email>
         </mat-form-field><br>
 
-        <span *ngIf="formRegistro.submitted && formRegistro.controls['email'].errors"
+        <span *ngIf="formRegistro.submitted && formRegistro.controls['password'].errors"
           class="text-danger animated fadeIn fast">Min legth 5</span>
         <mat-form-field class="input m-b-16">
           <input type="password" matInput placeholder="Password" [(ngModel)]="user.password" name="password" required
